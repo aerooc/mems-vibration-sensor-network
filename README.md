@@ -1,31 +1,30 @@
 # Distributed Vehicle Vibration Data Acquisition System
 
-A low-cost, multi-point MEMS sensor system for analyzing/exploring and monitoring vibration behaviour in passenger vehicles.
+A low-cost, multi-point MEMS sensor system for analyzing and monitoring vibration behaviour in passenger vehicles.
 
-**Core Research Question:** *Can low-cost MEMS accelerometers provide actionable vibration telemetry across distributed measurement points on a vehicle?*
-
-This is a personal learning project focused on developing practical skills in embedded systems, electronics and data analysis by building a sensor network from scratch.
+**Key Question:** *Can low-cost MEMS accelerometers provide useful vibration telemetry across distributed measurement points on a vehicle?*
 
 The project currently focuses on the sensor network and hardware design. 
 The system is being developed in KiCad, with C/C++ firmware and Python-based data analysis planned for later stages.
 
 
-Development Status & Roadmap
-
-## Project Status & Roadmap
-
 ## Tech Stack
 
 * **EDA / Hardware:** KiCad 8
-* **Processing:** ESP32-C3 Mini (RISC-V)
-* **Sensing:** ADXL345 (3-axis MEMS, SPI + INT1 data-ready line)
+* **Processing:** ESP32-C3 Mini (32-bit RISC-V)
+* **Sensing:** ADXL345 (3-axis MEMS, hardware SPI + INT1 data-ready interrupt)
 * **Bus / Physical Layer:** RS-485 transceiver (UART), daisy-chain topology with switchable 120 Ω termination
-* **Firmware (Planned):** C / C++
-* **Analytics (Planned):** Python (NumPy, SciPy for FFT and spectral analysis)
+* **Central Unit (Planned):** Dedicated Central Data Acquisition Unit (CDU) PCB
+* **Firmware (Planned):** C / C++ (SPI DMA/FIFO, multi-node packet protocol)
+* **Analytics & Edge AI (Planned):** Python (NumPy, SciPy for FFT) & TinyML anomaly detection
+
+
+## Project Status & Roadmap
+
 
 ---
 ### Completed (Current Stage)
-- [x] Distributed system architecture and multi-drop(daisy-chain) bus concept
+- [x] Distributed system architecture and multi-drop (daisy-chain) bus concept
 - [x] Sensor node schematic capture in KiCad (SPI, UART-RS485, power decoupling)
 - [x] Electrical Rules Check (ERC) verified
 
@@ -36,4 +35,5 @@ Development Status & Roadmap
 - [ ] Multi-point road testing on passenger vehicle
 - [ ] Python vibration analysis pipeline (FFT, time/frequency domain feature extraction)
 - [ ] Potential ML / TinyML integration for vibration anomaly detection (feasibility study)
+
 
