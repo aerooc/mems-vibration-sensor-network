@@ -2577,7 +2577,7 @@
 		)
 		(uuid "466fa557-7a98-4f9a-bb72-c748bd3e1289")
 	)
-	(text "microSD"
+	(text "microSD module"
 		(exclude_from_sim no)
 		(at 157.988 41.656 0)
 		(effects
