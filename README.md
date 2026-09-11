@@ -49,3 +49,18 @@ The system is being developed in KiCad, with C/C++ firmware and Python-based dat
 > 📄 [Download Central Unit Schematic (PDF)](docs/schematics/cdu.pdf)
 
 
+### Central Data Acquisition Unit (CDU)
+![CDU Architecture](docs/images/central.png)
+
+![CDU Schematic](docs/images/cdu.png)
+> 📄 [Download Central Unit Schematic (PDF)](docs/schematics/cdu.pdf)
+
+---
+
+### Sensor Node
+![Sensor Node Architecture](docs/images/sensor.png)
+
+![Sensor Node Schematic](docs/images/sensornode.png)
+> 📄 [Download Sensor Node Schematic (PDF)](docs/schematics/sensornode.pdf)
+
+
