@@ -37,3 +37,15 @@ The system is being developed in KiCad, with C/C++ firmware and Python-based dat
 - [ ] Potential ML / TinyML integration for vibration anomaly detection (feasibility study)
 
 
+---
+## Schematics & Hardware Preview
+
+### Sensor Node
+![Sensor Node](docs/images/sensornode.png)
+> 📄 [Download Sensor Node Schematic (PDF)](docs/schematics/sensornode.pdf)
+
+### Central Data Acquisition Unit (CDU)
+![CDU Schematic](docs/images/cdu.png)
+> 📄 [Download Central Unit Schematic (PDF)](docs/schematics/cdu.pdf)
+
+
